@@ -51,6 +51,11 @@ Once complete, submit a link to your GitHub repository containing the project fi
 Reflection Questions
 After completing this activity, consider the following:
 
-Why was it important to re-format the data from the Useless Facts API before sending it to your own client? What are the benefits of an API providing a clean, minimal response?
+Why was it important to re-format the data from the Useless Facts API before sending it to your own client? 
+- Transforming the data to display just the text makes it easier to read the useless fact.
+What are the benefits of an API providing a clean, minimal response?
+- It provides a more streamlined output with just the data relevant to what the user is searching for without excess information.
 In the catch block, why is it better to send a generic error message to the client instead of the actual error object from axios?
+- A generic error message keeps sensitive from accidentally being displayed, such as an API key.
 How might you modify this application to get a fact in a different language if the external API supported it (e.g., with a query parameter like ?language=de)?
+- Add ?language=xx to the end of the URL used for the axios.get parameter
