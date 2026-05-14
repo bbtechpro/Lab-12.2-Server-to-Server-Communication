@@ -12,6 +12,10 @@ app.get("/test", (req, res) => {
     res.send("Test Route")
 });
 
+ 
+app.get('/api/fun-fact', async (req, res) => {
+ 
+});
 
 // PORT
 app.listen(PORT, () => {
