@@ -15,7 +15,7 @@ app.get("/test", (req, res) => {
 app.get('/api/fun-fact', async (req, res) => {
     try {
         const response = await axios.get('https://uselessfacts.jsph.pl/random.json');
-        const fact = response.data.text;
+        const fact = response.data;
         res.json({ fact });
     } catch (error) {
         console.error('Error fetching fun fact:', error);
